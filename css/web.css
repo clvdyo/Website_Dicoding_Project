@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+  
+
+body {
+    font-family: 'Afacad', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+    background-color: #F1D3B3;
+}
+
+header.navbar-container {
+    width: 100%;
+   
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+   
+    z-index: 1;
+}
+   
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+   
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+   
+    text-decoration: none;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #65647C;
+   
+    transition: all 0.2s ease-in-out;
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: #8B7E74;
+    color: white;
+}
+
+h3, h4 {
+    color: #65647C;
+}
+ 
+main {
+    background-color: #C7BCA1;
+    padding: 20px;
+
+    overflow: auto;
+}
+
+h2 {
+    background-color: #8B7E74;
+    padding: 10px;
+    color: #65647C;
+}
+  
+#content {
+    float: left;
+    width: 75%;
+    flex: 5;
+  
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+  
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+   
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+   
+main aside .social-media ul {
+    padding: 0.5rem 0.5rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+   
+main aside .social-media li {
+    list-style-type: none;
+}
+   
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #65647C;
+   
+    transition: all 0.1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: #8B7E74;
+}
+
+.profile header {
+    text-align: center;
+} 
+  
+.profile img {
+    width: 150px;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+   
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: #F1D3B3;
+    background-color: #65647C;
+  
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+}
